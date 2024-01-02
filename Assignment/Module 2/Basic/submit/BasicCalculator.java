@@ -1,4 +1,3 @@
-//develop a program to perform basic arithmatic operations
 import java.util.*;
 
 public class BasicCalculator {
@@ -6,8 +5,11 @@ public class BasicCalculator {
         Scanner sc = new Scanner(System.in);
 
         try {
-            System.out.print("Please Enter:\n1 For addition\n2 For subtraction\n3 For multiplication\n4 For division\n");
-            int choice = sc.nextInt();
+            int choice;
+            do {
+                System.out.print("Please Enter:\n1 For addition\n2 For subtraction\n3 For multiplication\n4 For division\n");
+                choice = sc.nextInt();
+            } while (choice < 1 || choice > 4);
 
             System.out.print("Enter first number :");
             int a = sc.nextInt();
@@ -16,6 +18,8 @@ public class BasicCalculator {
             int b = sc.nextInt();
 
             double result = -1;
+            boolean isError = false;
+
             switch (choice) {
                 case 1: {
                     result = a + b;
@@ -32,17 +36,19 @@ public class BasicCalculator {
                 case 4: {
                     if (b == 0) {
                         System.out.println("Can't divide a number by zero!");
+                        isError = true;
                     } else {
                         result = (double) a / b;
                     }
                     break;
                 }
                 default:
-                    System.out.println("Please check your choice once! :)");
+                    System.out.println("Unexpected error occurred!");
+                    isError = true;
                     break;
             }
 
-            if (result >= 0) {
+            if (!isError) {
                 System.out.println("Result is " + result);
             }
         } catch (InputMismatchException e) {
@@ -52,3 +58,13 @@ public class BasicCalculator {
         }
     }
 }
+
+// Please Enter:
+// 1 For addition
+// 2 For subtraction
+// 3 For multiplication
+// 4 For division
+// 4
+// Enter first number :10
+// Enter second number:0
+// Can't divide a number by zero!

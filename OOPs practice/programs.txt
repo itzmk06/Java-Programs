@@ -1,0 +1,8 @@
+write a java program to read and print employee information name,empid,gender
+with departement dname,work work assigned and with loan information (laon details),loan
+amount using hierarchical inheritance 
+
+write a java program to create a class called student with the data members usn,name,assignedusing suitable
+inheritance usn,name,age. using suitable inheritance create the class ugstudnt having data members as semester fees
+ cgpa and stipend and display the details of student information and ug details.
+ 

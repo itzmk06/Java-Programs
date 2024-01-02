@@ -1,0 +1,2 @@
+1. write a program to recive two parameters, identify the area of rect ,
+square and .
