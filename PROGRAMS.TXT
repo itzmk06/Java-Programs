@@ -1,0 +1,12 @@
+develop a java program to create an interface Resizeable with methods resizeWidth and resizeHeight
+that allow an object to be resized. create a class  Rectangle that implements the Resizeable
+interface and implements the resize methods
+
+create an interface calldd shape with the methods to read the
+dimentions of the corresponding shape perimetre to calculate the 
+perimeter of the shape area, of the shape. create class called triangle 
+that implements the interface shape 
+
+create an interface called numnber with the methods assendingorder
+descending order create a class called Sorting which implemetnt 
+the number interfceae
