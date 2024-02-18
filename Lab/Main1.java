@@ -2,8 +2,6 @@ interface Resizable {
     void resizeWidth(int width);
     void resizeHeight(int height);
 }
-
-
 class Rectangle implements Resizable {
     private int width;
     private int height;
@@ -48,3 +46,11 @@ public class Main1 {
         System.out.println("Final Height: " + rectangle.getHeight());
     }
 }
+
+//outlput
+// Initial Width: 10
+// Initial Height: 5
+// Resized width to: 15
+// Resized height to: 8
+// Final Width: 15
+// Final Height: 8
